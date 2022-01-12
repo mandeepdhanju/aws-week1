@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-
 app.use(express.json())
 
 const pokemons = [
@@ -10,7 +9,8 @@ const pokemons = [
     type: "electric ⚡️",
     level: 99,
     image: "/pikachu.webp"
-  }
+  },
+
 ]
 
 app.get("/api/pokemons", (req, res) => {
